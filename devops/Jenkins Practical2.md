@@ -20,3 +20,9 @@
 ssh-rsa ...your key text..... jenkins@kali
 
 ```
+### Some Suggestions
+1. Use AWS Provided key as credentials
+2. host verifiction strategy (known host or non verifying) both are all right
+3. use command "update-alternatives --list java" to get java path
+4. don't forget to paste the public key of jenkins contrller to Agent auth file.
+5. Set proper user for /var and /var/jenkins directory
