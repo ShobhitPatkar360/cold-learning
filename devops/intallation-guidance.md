@@ -132,6 +132,13 @@ sudo docker run hello-world
 
 # execute docker commands with sudo or root user
 ```
+Don't forget to add the current user to docker group
+```bash
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
+
 ## Kubernetes Installation
 1. Use link to set up kubernetes cluster - https://github.com/ShobhitPatkar360/kubestarter/blob/main/kubeadm_installation.md
 2. Give host name to your system using command - sudo hostnamectl set-hostname <your-hostname>
